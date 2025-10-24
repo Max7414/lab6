@@ -39,3 +39,9 @@ This document walks through the three required merge experiments. Adapt the comm
 - Enable matrix builds (e.g., Python 3.9–3.11) in CI.
 - Try `git rerere` or `git range-diff` to streamline conflict handling.
 - Draft policy recommendations comparing merge strategies (auditability, revert ease).
+
+### Experiment 3 – Different Files (Fast-Forward & Squash Notes)
+- Document-only branch should demonstrate squash merge.
+- Code branch should be merged via local fast-forward to highlight linear history.
+- Capture Actions timeline showing independent job execution.
+- Record git log snippet after merges for report appendix.
