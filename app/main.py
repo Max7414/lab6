@@ -14,7 +14,6 @@ def format_message(name: str) -> str:
     return f"Hello from both collaborators, {cleaned}!"
 
 
-
 def format_excited_message(name: str) -> str:
     """Return a loud, uppercase greeting for celebratory contexts."""
     message = format_message(name)
