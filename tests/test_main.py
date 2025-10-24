@@ -14,3 +14,8 @@ def test_format_message_strips_whitespace():
 def test_format_message_rejects_empty():
     with pytest.raises(ValueError):
         format_message("   ")
+
+
+def test_format_message_summary():
+    assert format_message_summary("Dana") == "Greeting prepared for Dana"
+
