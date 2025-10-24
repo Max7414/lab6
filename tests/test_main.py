@@ -8,7 +8,7 @@ def test_add_numbers():
 
 
 def test_format_message_strips_whitespace():
-    assert format_message("  Alice  ") == "Hello, Alice!"
+    assert format_message("  Alice  ") == "Hello from both collaborators, Alice!"
 
 
 def test_format_message_rejects_empty():
