@@ -1,6 +1,6 @@
 import pytest
 
-from app import add_numbers, format_message
+from app import add_numbers, format_message, format_excited_message
 
 
 def test_add_numbers():
