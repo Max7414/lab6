@@ -1,6 +1,6 @@
 import pytest
 
-from app import add_numbers, format_message
+from app import add_numbers, format_message, format_excited_message
 
 
 def test_add_numbers():
@@ -14,3 +14,10 @@ def test_format_message_strips_whitespace():
 def test_format_message_rejects_empty():
     with pytest.raises(ValueError):
         format_message("   ")
+
+
+def test_format_excited_message_uppercases():
+    assert format_message("Charlie") == "Hello from both collaborators, Charlie!"
+    assert (
+        format_excited_message("Charlie") == "HELLO FROM BOTH COLLABORATORS, CHARLIE!"
+    )
