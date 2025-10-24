@@ -16,8 +16,6 @@ def test_format_message_rejects_empty():
         format_message("   ")
 
 
-def test_format_excited_message_uppercases():
-    assert format_message("Charlie") == "Hello from both collaborators, Charlie!"
-    assert (
-        format_excited_message("Charlie") == "HELLO FROM BOTH COLLABORATORS, CHARLIE!"
-    )
+def test_format_message_summary():
+    assert format_message_summary("Dana") == "Greeting prepared for Dana"
+
