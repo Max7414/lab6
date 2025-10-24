@@ -14,8 +14,7 @@ def format_message(name: str) -> str:
     return f"Hello from both collaborators, {cleaned}!"
 
 
-
-def format_message_summary(name: str) -> str:
-    """Return a short summary used for logging."""
-    cleaned = name.strip() or "<unknown>"
-    return f"Greeting prepared for {cleaned}"
+def format_excited_message(name: str) -> str:
+    """Return a loud, uppercase greeting for celebratory contexts."""
+    message = format_message(name)
+    return message.upper()
